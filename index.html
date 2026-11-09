@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ONYX TUBE — Dark Web Videos, Tor Video Sharing & Discovery</title>
-  <meta name="description" content="Discover ONYX TUBE, a Tor video-sharing platform for exploring dark web videos, browsing video categories and tags, and discovering creators through the Tor network.">
-  <meta name="keywords" content="ONYX TUBE, ONYXTube, dark web videos, dark web video sharing, dark web YouTube, Tor video platform, Tor video sharing, watch videos on the dark web, onion video site, videos on Tor, video categories, video creators, Torture, Red Room">
+  <meta name="description" content="Discover ONYX TUBE, a Tor video-sharing platform for videos, creators, and topic discovery. Eligible creators can monetize selected locked videos through Bitcoin payments.">
+  <meta name="keywords" content="ONYX TUBE, ONYXTube, dark web videos, dark web video sharing, dark web YouTube, Tor video platform, Tor video sharing, creator monetization, earn from videos, locked videos, paid video access, Bitcoin video payments, onion video site, video categories, video creators, Torture, Red Room">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://onyx-tube.github.io/">
   <meta name="theme-color" content="#101713">
@@ -52,6 +52,14 @@
     .tile { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:18px; }
     .tile h3 { margin:0 0 6px; font-size:1.05rem; }
     .tile p { color:var(--muted); margin:0; font-size:.94rem; }
+    .earn-panel { margin:24px 0 8px; padding:clamp(22px,4vw,36px); border:1px solid #456b50; border-radius:18px; background:radial-gradient(ellipse at 100% 0%,#294b34 0%,#14231a 48%,#101813 100%); box-shadow:0 18px 48px #0005; }
+    .earn-kicker { display:inline-block; padding:5px 10px; border:1px solid #527b5d; border-radius:999px; color:#b5f2c4; font-size:.76rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+    .earn-panel h2 { margin:14px 0 10px; font-size:clamp(1.8rem,4vw,2.5rem); }
+    .earn-panel .earn-lead { max-width:700px; color:#d1e3d5; font-size:1.08rem; }
+    .earn-steps { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; margin:22px 0; }
+    .earn-step { padding:16px; border:1px solid #35533d; border-radius:12px; background:#0d1711aa; }
+    .earn-step strong { display:block; margin-bottom:5px; color:#b5f2c4; }
+    .earn-note { color:#b6c8ba; font-size:.88rem; }
     footer { border-top:1px solid var(--line); padding:24px 0 40px; color:var(--muted); font-size:.9rem; }
     code { overflow-wrap:anywhere; color:#d4f3dd; }
     @media(max-width:600px) { main { padding-top:48px; } .actions { flex-direction:column; align-items:stretch; } .actions a { text-align:center; } }
@@ -82,6 +90,22 @@
         <article class="tile"><h3>Discover creators</h3><p>Find creator pages and explore videos shared by members of the ONYX TUBE community.</p></article>
         <article class="tile"><h3>Explore categories and tags</h3><p>Use topic labels to navigate video listings and discover related areas of the platform.</p></article>
         <article class="tile"><h3>Share videos</h3><p>ONYX TUBE provides video-sharing features for creators using the platform.</p></article>
+      </div>
+    </section>
+
+
+    <section id="creator-earnings">
+      <div class="earn-panel">
+        <span class="earn-kicker">For creators · Monetize your videos</span>
+        <h2>Create. Share. <span style="color:var(--green)">Earn.</span></h2>
+        <p class="earn-lead">Your videos can do more than collect views. Eligible ONYX TUBE creators can choose to make selected videos locked, giving viewers the option to pay for access and giving creators a way to earn from their content.</p>
+        <div class="earn-steps">
+          <div class="earn-step"><strong>1. Create and upload</strong><span>Share your original videos with the ONYX TUBE community.</span></div>
+          <div class="earn-step"><strong>2. Choose locked access</strong><span>Make selected videos exclusive while keeping other uploads available to viewers.</span></div>
+          <div class="earn-step"><strong>3. Get paid for access</strong><span>Viewers who want to watch can choose to unlock a locked video through the platform's Bitcoin checkout.</span></div>
+        </div>
+        <p class="earn-note">Locked-video monetization is available to eligible creators. Earnings depend on viewers choosing to purchase access; revenue is not guaranteed.</p>
+        <div class="actions"><a class="button" href="http://ontubefqxodw2wygxohd3wr2tsdbvyc2bhitr3uqq6oew4zkzvcoggyd.onion" rel="noopener">Explore ONYX TUBE on Tor</a></div>
       </div>
     </section>
 
@@ -158,6 +182,10 @@
       <p>Yes. The platform includes video category and tag labels, including Videos, Torture, and Red Room.</p>
       <h3>Can creators share videos?</h3>
       <p>ONYX TUBE is a video-sharing platform with features for creators to share content.</p>
+      <h3>Can creators earn from their videos?</h3>
+      <p>Eligible creators can choose to make selected videos locked. Viewers who want to watch can choose to unlock them through the platform's Bitcoin checkout, allowing creators to monetize selected content. Earnings depend on viewer purchases and are not guaranteed.</p>
+      <h3>How do locked videos work?</h3>
+      <p>A creator can designate an eligible video as locked. Viewers complete the platform's Bitcoin checkout and can watch after the existing payment verification succeeds.</p>
       <h3>Is this the video platform itself?</h3>
       <p>No. This is the public information and discovery page. The video platform is hosted at the official onion address.</p>
     </section>
